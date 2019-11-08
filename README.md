@@ -1,0 +1,1 @@
+# AzureFunctionsInputBindingSample-FaceAPI
