@@ -6,9 +6,9 @@
       "type": "httpTrigger",
       "direction": "in",
       "methods": [
-        "get",
-        "post"
-      ]
+        "get"
+      ],
+      "route": "FaceEmotion/picture={name}"
     },
     {
       "name": "$return",
@@ -18,7 +18,7 @@
     {
       "type": "blob",
       "name": "inputBlob",
-      "path": "<YOUR_BLOB_CONTAINER_NAME>/<YOUR_FILE_NAME>.png",
+      "path": "folder/{name}",
       "connection": "inputbindingblob_STORAGE",
       "direction": "in"
     }
